@@ -1,2 +1,13 @@
 # aracnidea
 Repo for the interactive installation Arcnídea, developed for Goldsmiths University of London
+
+**In short**
+
+Aracnídea is an installation that explores investigates an inside out space, where the participants watch a performance from the inside - the performers' data build the space, but they are not physically there. The installation contains a pre recorded video and audio of a performer. She is present, but the only live element from her is the data of her emotions. She wears a GSR sensor and the information is sent to TouchDesigner in the installation space, deforming her body on the video. 
+The prompt was to create create with interconnections and mapping using TouchDesigner. A teaser can be seen at: https://vimeo.com/908835414
+
+**Concept and Background Research**
+
+The video material was created in a workshop of performance art practices in Latin America with examples of popular rituals that I have been giving for women in the past four years. At the end of each round, the group creates their own individual ritual, a plastic-autopsy of embodied emotions related to their experience of womanhood in LatAm. After long and intimate rituals together, a farewell one is made by giving her body away to her obsessive embodied emotion, by erasing her identity with materiality that is related to it. On the installation, this ritual is distorted by the live data of the performer's emotion by distance, and the connection is created through OSC. 
+The TouchDesigner code was inspired by a tutorial Blob Tracking Instancing by PPPANIK on YouTube. Instead of an audio reactive patch, I connected it to a GSR sensor through a Raspberry Pi Pico W board, getting the data from the body and sending via OSC to TD. The decision for this patch included many reasons. Initially, it was an aesthetic choice, in the sense of distorting the image based on an analog input, but allowing the initial video input to be recognizable somehow. Then, while altering the patch, the decisions were guided by the desire to make the person lose their identity, an additional step on top of the process with the materiality itself. Finally, it was important for the person to be tagged somehow, and use the patch as a tool for critically reducing the persona into data: each movement is tracked and signalised with a squared box.
+In the future, I will further develop this project and work on the following structure. It was inspired by the concept of Performatic Programme by Eleonora Fabião, a brazilian researcher and performer who suggests that a presentation doesn't have a set and rehearsed plan, but cues to be followed by the artists, while letting the experience create itself.
